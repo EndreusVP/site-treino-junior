@@ -13,6 +13,13 @@
         width: 150px;
         height: 350px;
     }
+
+     #projetos {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -43,5 +50,11 @@
         width: 150px;
         height: 350px;
     }
-    
+
+    #projetos {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+    }
+
 }
