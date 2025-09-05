@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 768px) {
+    #menu > ul {
+        gap: 20px;
+    }
+
+    #habilidades {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .imagem {
+        width: 90%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #menu {
+        height: 100px;
+    }
+
+    #menu > ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section > h1 {
+        font-size: 28px;
+    }
+
+    section > p {
+        font-size: 18px;
+    }
+
+    #inicio > div {
+        width: 95%;
+        height: 200px;
+    }
+}
