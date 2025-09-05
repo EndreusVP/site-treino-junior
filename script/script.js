@@ -36,11 +36,11 @@ bntEnviar.addEventListener("click", function (e) {
 
 front.addEventListener("click", function (e) {
     tituloProjeto.textContent = "Projeto FrontEnd 1"
-    imgProjeto.src = "../img/macaco.png"
+    imgProjeto.src = "../img/macacofront.png"
     tituloProjeto2.textContent = "Projeto FrontEnd 2"
-    imgProjeto2.src = "../img/macaco.png"
+    imgProjeto2.src = "../img/macacofront.png"
     tituloProjeto3.textContent = "Projeto FrontEnd 3"
-    imgProjeto3.src = "../img/macaco.png"
+    imgProjeto3.src = "../img/macacofront.png"
 });
 
 back.addEventListener("click", function (e) {
