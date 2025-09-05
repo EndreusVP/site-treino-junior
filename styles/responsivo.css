@@ -15,7 +15,6 @@
     }
 
      #projetos {
-        flex-direction: column;
         height: auto;
         padding: 30px;
     }
@@ -25,12 +24,13 @@
 @media screen and (max-width: 480px) {
 
     #menu {
-        height: 100px;
+        height: 130px;
     }
 
-    #menu > ul {
-        flex-direction: column;
+    #menu > ul {    
         gap: 10px;
+        padding: 20px;
+        flex-wrap:wrap;
     }
 
     section > h1 {
@@ -52,7 +52,7 @@
     }
 
     #projetos {
-        flex-direction: column;
+        flex-wrap: wrap;
         height: auto;
         padding: 30px;
     }
