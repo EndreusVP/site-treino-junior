@@ -153,13 +153,54 @@
 
     #projetos {
         display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #333;
+        padding: 30px;
+        height: auto;
+    }
+
+    .pesquisar-projeto{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: solid black 2px;
+        border-radius: 10px;
+        width: 450px;
+        height: 300px;
+        padding: 30px;
+        gap: 30px;
+        background-color: black;
+        box-shadow: 1px 1px 10px white;
+    }
+
+    .pesquisar-projeto>span>button {
+        width: 80px;
+        height: 40px;
+        background-color: rgba(228, 228, 47, 0.796);
+        color: black;
+        border: none;
+        border-radius: 5px;
+        transition: all 1s ease;
+        font-weight: 900;
+    }
+
+    .pesquisar-projeto>span>button:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+
+    .big-container {
+        display: flex;
         flex-direction: row;
         gap: 20px;
         background-color: #333;
         padding: 10px;
     }
 
-    #projetos > div {
+    .container {
         border: rgb(228, 228, 47) solid 2px;
         padding: 10px;
         border-radius: 10px;
@@ -168,8 +209,13 @@
         transition: all 1s ease;
     }
 
-    #projetos>div:hover {
+    .container:hover {
         transform: scale(0.9);
+    }
+
+    .container>img {
+        width: 250px;
+        height: 350px;
     }
 
     #contato {

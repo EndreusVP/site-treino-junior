@@ -19,6 +19,10 @@
         padding: 30px;
     }
 
+    .big-container {
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -55,6 +59,17 @@
         flex-wrap: wrap;
         height: auto;
         padding: 30px;
+    }
+    .big-container{
+        flex-direction: column;
+    }
+
+    .container {
+        width: 315px;
+    }
+
+    .pesquisar-projeto {
+        width: 315px;
     }
 
 }

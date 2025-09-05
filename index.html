@@ -15,6 +15,7 @@
 
     <title>Document</title>
 </head>
+
 <body>
 
     <nav id="menu">
@@ -33,7 +34,7 @@
             <p>Meu nome eh Endreus e esse site sera utilizado como treino para me tornar dev junior</p>
         </div>
     </section>
-    
+
     <section id="habilidades">
         <div class="lista" data-aos="flip-left" data-aos-once="true">
             <h1>Minhas habilidades</h1>
@@ -52,21 +53,36 @@
     </section>
 
     <section id="projetos">
-        <div>
-            <img src="img/macaco.png" alt="">
-            <h1>Projeto 1</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nemo ut fuga velit, saepe quisquam mollitia asperiores</p>
+
+        <div class="pesquisar-projeto">
+            <h1>quais projetos quer ver?</h1>
+            <span style="display: flex; gap: 50px;">
+                <button id="front">FrontEnd</button>
+                <button id="back">Backend</button>
+            </span>
         </div>
-        <div>
-            <img src="img/macaco.png" alt="">
-            <h1>Projeto 2</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nemo ut fuga velit, saepe quisquam mollitia asperiores</p>
+
+        <div class="big-container">
+            <div class="container">
+                <img src="img/macaco.png" alt="" id="img-projeto">
+                <h1 id="titulo-projeto">Projeto 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nemo ut fuga velit, saepe quisquam
+                    mollitia asperiores</p>
+            </div>
+            <div class="container">
+                <img src="img/macaco.png" alt="" id="img-projeto2">
+                <h1 id="titulo-projeto2">Projeto 2</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nemo ut fuga velit, saepe quisquam
+                    mollitia asperiores</p>
+            </div>
+            <div class="container">
+                <img src="img/macaco.png" alt="" id="img-projeto3">
+                <h1 id="titulo-projeto3">Projeto 3</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nemo ut fuga velit, saepe quisquam
+                    mollitia asperiores</p>
+            </div>
         </div>
-        <div>
-            <img src="img/macaco.png" alt="">
-            <h1>Projeto 3</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nemo ut fuga velit, saepe quisquam mollitia asperiores</p>
-        </div>
+
     </section>
 
     <section id="contato">
@@ -86,8 +102,6 @@
 
             <p id="status-mensagem"></p>
         </form>
-
-       
     </section>
 
 </body>
@@ -95,7 +109,7 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init();
+    AOS.init();
 </script>
 
 
