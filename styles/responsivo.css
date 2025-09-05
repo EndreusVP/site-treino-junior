@@ -10,8 +10,8 @@
     }
 
     .imagem {
-        width: 90%;
-        height: 250px;
+        width: 150px;
+        height: 350px;
     }
 }
 
@@ -38,4 +38,10 @@
         width: 95%;
         height: 200px;
     }
+
+    .imagem {
+        width: 150px;
+        height: 350px;
+    }
+    
 }
