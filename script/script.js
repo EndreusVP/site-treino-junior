@@ -20,6 +20,8 @@ const lerMais = document.querySelector("#ler-mais");
 const lerMais2 = document.querySelector("#ler-mais2");
 const lerMais3 = document.querySelector("#ler-mais3");
 
+const padraoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 const front = document.querySelector("#front");
 const back = document.querySelector("#back");
 
@@ -79,7 +81,10 @@ const lermais3 = () => {
 
 bntEnviar.addEventListener("click", function (e) {
     e.preventDefault();
-    if (nome.value.trim() !== "" && email.value.trim() !== "" && mensagem.value.trim() !== "") {
+
+     const emailValido = email.checkValidity(); // verifica se o campo do email eh valido 
+
+    if (nome.value.trim() !== "" && email.value.trim() !== "" && mensagem.value.trim() !== "" && emailValido) {
         statusMensagem.textContent = "mensagem enviada👍"
         statusMensagem.style.color = "black"
         statusMensagem.style.backgroundColor = "white"
@@ -90,12 +95,15 @@ bntEnviar.addEventListener("click", function (e) {
         email.value = "";
         mensagem.value = "";
     } else {
-        statusMensagem.textContent = "preencha os campos👎"
+        statusMensagem.textContent = "preencha os campos corretamente👎"
         statusMensagem.style.color = "black"
         statusMensagem.style.backgroundColor = "white"
         statusMensagem.style.border = "solid 1px black"
         statusMensagem.style.borderRadius = "5px"
-        statusMensagem.style.width = "300px"
+        statusMensagem.style.width = "300px";
+        nome.value = "";
+        email.value = "";
+        mensagem.value = "";
     }
 })
 
