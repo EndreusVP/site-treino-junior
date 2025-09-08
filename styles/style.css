@@ -218,6 +218,10 @@
         height: 350px;
     }
 
+    .container>p:hover {
+        cursor: pointer;
+    }
+
     #contato {
         background-color: black;
         padding: 20px;
