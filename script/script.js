@@ -118,6 +118,10 @@ front.addEventListener("click", function (e) {
     informacaoTexto.style.opacity = "0";
     informacaoTexto2.style.opacity = "0";
     informacaoTexto3.style.opacity = "0";
+
+    lerMais.textContent = "ler mais"
+    lerMais2.textContent = "ler mais"
+    lerMais3.textContent = "ler mais"
 });
 
 back.addEventListener("click", function (e) {
@@ -131,5 +135,9 @@ back.addEventListener("click", function (e) {
     informacaoTexto.style.opacity = "0";
     informacaoTexto2.style.opacity = "0";
     informacaoTexto3.style.opacity = "0";
+
+    lerMais.textContent = "ler mais"
+    lerMais2.textContent = "ler mais"
+    lerMais3.textContent = "ler mais"
 });
 
